@@ -614,7 +614,7 @@
         "group": "premium",
         "enabled": true,
         "priority": 21
-    },
+   },
     {
         "id": "xibao",
         "name": "细胞采集",
@@ -622,15 +622,15 @@
         "group": "premium",
         "enabled": true,
         "priority": 22
-    }
-{
+    },
+  {
     "id": "360zy",
     "name": "360资源",
     "baseUrl": "shturl.cc/XSqbqth3PM92qyyMuNbRn2kjfok",
     "group": "normal",
     "enabled": true,
     "priority": 1
-},
+  },
 {
     "id": "1080zyk",
     "name": "1080资源库",
