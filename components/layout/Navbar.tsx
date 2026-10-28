@@ -121,7 +121,7 @@ export function Navbar({ onReset, isPremiumMode = false }: NavbarProps) {
                                 className="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center rounded-[var(--radius-full)] bg-[var(--glass-bg)] border border-[var(--glass-border)] text-[var(--text-color)] hover:bg-[color-mix(in_srgb,var(--accent-color)_10%,transparent)] transition-all duration-200 cursor-pointer hidden sm:flex"
                                 aria-label="GitHub 仓库"
                             >
-                                <Icons.Star size={20} />
+                                <Icons.Cat size={20} />
                             </a>
                             <Link
                                 href={favoritesHref}
@@ -131,6 +131,21 @@ export function Navbar({ onReset, isPremiumMode = false }: NavbarProps) {
                             >
                                 <Icons.Heart size={20} />
                             </Link>
+{/* Premium Entry - only on main (non-premium) pages */}
+                            {!isPremiumMode && (
+                                <Link
+                                    href="/premium"
+                                    className="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center rounded-[var(--radius-full)] bg-[var(--glass-bg)] border border-[var(--glass-border)] text-[var(--accent-color)] hover:bg-[color-mix(in_srgb,var(--accent-color)_10%,transparent)] transition-all duration-200 cursor-pointer"
+                                    aria-label="高级内容"
+                                    title="高级内容"
+                                    data-focusable
+                                >
+                                    <Icons.Star size={20} />
+                                </Link>
+                            )}
+
+
+                            
                             <Link
                                 href={settingsHref}
                                 className="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center rounded-[var(--radius-full)] bg-[var(--glass-bg)] border border-[var(--glass-border)] text-[var(--text-color)] hover:bg-[color-mix(in_srgb,var(--accent-color)_10%,transparent)] transition-all duration-200 cursor-pointer"
