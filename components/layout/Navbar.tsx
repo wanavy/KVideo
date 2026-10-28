@@ -131,7 +131,7 @@ export function Navbar({ onReset, isPremiumMode = false }: NavbarProps) {
                             >
                                 <Icons.Heart size={20} />
                             </Link>
-{/* Premium Entry - only on main (non-premium) pages */}
+                        {/* Premium Entry - only on main (non-premium) pages */}
                             {!isPremiumMode && (
                                 <Link
                                     href="/premium"
